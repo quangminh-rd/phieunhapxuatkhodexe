@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phiếu nhập xuất đề xê</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="./public/script.js" defer></script>
+    <script src="./public/export-pdf.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.2.0/exceljs.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <img src="https://i.imgur.com/vfwvNd4.jpg" alt="Mô tả hình ảnh">
+        <h2 id="titlePhieu" style="text-align: center">LOẠI PHIẾU ĐANG TẢI...</h2>
+        <p style="text-align: center">(Mã phiếu: <span id="maPhieu">Đang tải...</span>)</p>
+        <p style="text-align: right"><i>Xưởng <span id="xuongSanXuat">Đang tải...</span>,
+                Ngày <span id="ngayTao">Đang tải...</span>
+                <span id="thang">Đang tải...</span>
+                <span id="nam">Đang tải...</span></i></p>
+        <table>
+            <tbody>
+                <tr style="line-height: 24px;">
+                    <td class="infocol-1"><i>Người lập phiếu</i></td>
+                    <td class="infocol-2"><i>:</i></td>
+                    <td class="infocol-3"><i><span id="nguoiTao">Đang tải...</span></i></td>
+                </tr>
+                <tr style="line-height: 24px;">
+                    <td class="infocol-1"><i>Ghi chú</i></td>
+                    <td class="infocol-2"><i>:</i></td>
+                    <td class="infocol-3"><i><span id="ghiChu">Đang tải...</span></i></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="bordered-table">
+            <thead>
+                <tr class="bordered-table">
+                    <th class="borderedcol-1">Nhóm vật tư</th>
+                    <th class="borderedcol-2">Mã vật tư</th>
+                    <th class="borderedcol-3">Tên vật tư</th>
+                    <th class="borderedcol-4">Khoảng chiều dài</th>
+                    <th class="borderedcol-5">Khoảng số nếp</th>
+                    <th class="borderedcol-6">ĐVT</th>
+                    <th class="borderedcol-7">Số lượng</th>
+                    <th class="borderedcol-8">Vị trí kệ hàng</th>
+                    <th class="borderedcol-9">Ghi chú</th>
+                </tr>
+            </thead>
+            <tbody id="itemTableBody">
+                <!-- Rows will be added dynamically here -->
+            </tbody>
+        </table>
+        <table style="width: 100%; margin-top: 16px;">
+            <tbody>
+                <tr style="text-align: center">
+                    <td style="width: 25%;"><b>Người lập phiếu</b><br><i>(ký, ghi rõ họ tên)</i></td>
+                    <td style="width: 25%;"><b>Thủ kho</b><br><i>(ký, ghi rõ họ tên)</i></td>
+                    <td style="width: 25%;"><b>Người nhận hàng</b><br><i>(ký, ghi rõ họ tên)</i></td>
+                    <td style="width: 25%;"><b>Trưởng bộ phận</b><br><i>(ký, ghi rõ họ tên)</i></td>
+                </tr>
+                <tr style="text-align: center">
+                    <td style="width: 25%; height: 100px;"></td>
+                    <td style="width: 25%; height: 100px;"></td>
+                    <td style="width: 25%; height: 100px;"></td>
+                    <td style="width: 25%; height: 100px;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button id="export-pdf" class="button-pdf">Tải PDF</button>
+</body>
+
+</html>
