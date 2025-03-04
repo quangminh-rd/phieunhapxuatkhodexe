@@ -138,7 +138,7 @@ function formatWithCommas(numberString) {
     return parseFloat(num).toLocaleString('it-IT');
 }
 
-const SPREADSHEET_ID = '1lpAhOVuK_6Kk31ObB07Qg-NFnFlRmkjKlohpEPw7kyE';
+const SPREADSHEET_ID = '1idd6prryF4SFemjPHQpKUwXQCg9rRxsn8DE6DtXCeP4';
 const RANGE = 'nhap_xuat_kho!A:N'; // Mở rộng phạm vi đến cột N
 const RANGE_CHITIET = 'nhap_xuat_kho_chi_tiet!B:V'; // Dải dữ liệu từ sheet 'nhap_xuat_kho_chi_tiet'
 const API_KEY = 'AIzaSyA9g2qFUolpsu3_HVHOebdZb0NXnQgXlFM';
@@ -352,12 +352,14 @@ function displayDetailData(filteredRows) {
             <td class="borderedcol-1">${item.nhomVattu || ''}</td>
             <td class="borderedcol-2">${item.maVattu || ''}</td>
             <td class="borderedcol-3">${item.tenVattu || ''}</td>
-            <td class="borderedcol-4">${item.khoangChieudai || ''}</td>
-            <td class="borderedcol-5">${item.khoangSonep || ''}</td>
-            <td class="borderedcol-7">${item.slXuatQuydoi || ''}</td>
-            <td class="borderedcol-6">${item.dvtQuydoi || ''}</td>
-            <td class="borderedcol-8">${item.vitriKehang || ''}</td>
-            <td class="borderedcol-9">${item.ghiChuItem || ''}</td>
+            <td class="borderedcol-4">${item.chieuDai || ''}</td>
+            <td class="borderedcol-5">${item.soNep || ''}</td>
+            <td class="borderedcol-6">${item.slXuatQuydoi || ''}</td>
+            <td class="borderedcol-7">${item.dvtQuydoi || ''}</td>
+            <td class="borderedcol-8">${item.chieuDainhaplai || ''}</td>
+            <td class="borderedcol-9">${item.soNepnhaplai || ''}</td>
+            <td class="borderedcol-10">${item.vitriKehang || ''}</td>
+            <td class="borderedcol-11">${item.ghiChuItem || ''}</td>
         </tr>
     `;
     });
@@ -370,12 +372,14 @@ function extractDetailDataFromRow(row) {
         nhomVattu: row[8],
         maVattu: row[9],
         tenVattu: row[10],
-        khoangChieudai: row[11],
-        khoangSonep: row[12],
-        slXuatQuydoi: row[13],
-        dvtQuydoi: row[14],
-        vitriKehang: row[17],
-        ghiChuItem: row[18],
+        chieuDai: row[11],
+        soNep: row[12],
+        slXuatQuydoi: row[15],
+        dvtQuydoi: row[16],
+        chieuDainhaplai: row[17],
+        soNepnhaplai: row[18],
+        vitriKehang: row[19],
+        ghiChuItem: row[20],
     };
 }
 
