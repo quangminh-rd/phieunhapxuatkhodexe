@@ -96,17 +96,17 @@ img {
 }
 
 .borderedcol-1 {
-    width: 15%;
+    width: 9%;
     text-align: left;
 }
 
 .borderedcol-2 {
-    width: 12%;
+    width: 9%;
     text-align: left;
 }
 
 .borderedcol-3 {
-    width: 25%;
+    width: 18%;
     text-align: left;
 }
 
@@ -131,11 +131,21 @@ img {
 }
 
 .borderedcol-8 {
-    width: 6%;
+    width: 8%;
     text-align: center;
 }
 
 .borderedcol-9 {
+    width: 8%;
+    text-align: center;
+}
+
+.borderedcol-10 {
+    width: 6%;
+    text-align: center;
+}
+
+.borderedcol-11 {
     width: 14%;
     text-align: center;
 }
@@ -287,17 +297,17 @@ img {
     }
 
     .borderedcol-1 {
-        width: 15%;
+        width: 9%;
         text-align: left;
     }
 
     .borderedcol-2 {
-        width: 12%;
+        width: 9%;
         text-align: left;
     }
 
     .borderedcol-3 {
-        width: 25%;
+        width: 18%;
         text-align: left;
     }
 
@@ -322,11 +332,21 @@ img {
     }
 
     .borderedcol-8 {
-        width: 6%;
+        width: 8%;
         text-align: center;
     }
 
     .borderedcol-9 {
+        width: 8%;
+        text-align: center;
+    }
+
+    .borderedcol-10 {
+        width: 6%;
+        text-align: center;
+    }
+
+    .borderedcol-11 {
         width: 14%;
         text-align: center;
     }
