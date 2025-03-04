@@ -139,8 +139,8 @@ function formatWithCommas(numberString) {
 }
 
 const SPREADSHEET_ID = '1idd6prryF4SFemjPHQpKUwXQCg9rRxsn8DE6DtXCeP4';
-const RANGE = 'nhap_xuat_kho!A:N'; // Mở rộng phạm vi đến cột N
-const RANGE_CHITIET = 'nhap_xuat_kho_chi_tiet!B:V'; // Dải dữ liệu từ sheet 'nhap_xuat_kho_chi_tiet'
+const RANGE = 'nhap_xuat_kho!A:p'; // Mở rộng phạm vi đến cột P
+const RANGE_CHITIET = 'nhap_xuat_kho_chi_tiet!B:X'; // Dải dữ liệu từ sheet 'nhap_xuat_kho_chi_tiet'
 const API_KEY = 'AIzaSyA9g2qFUolpsu3_HVHOebdZb0NXnQgXlFM';
 
 // Lấy giá trị từ URI sau dấu "?" cho các tham số cụ thể
