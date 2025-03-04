@@ -354,8 +354,8 @@ function displayDetailData(filteredRows) {
             <td class="borderedcol-3">${item.tenVattu || ''}</td>
             <td class="borderedcol-4">${item.chieuDai || ''}</td>
             <td class="borderedcol-5">${item.soNep || ''}</td>
-            <td class="borderedcol-6">${item.slXuatQuydoi || ''}</td>
-            <td class="borderedcol-7">${item.dvtQuydoi || ''}</td>
+            <td class="borderedcol-6">${item.sl || ''}</td>
+            <td class="borderedcol-7">${item.dvt || ''}</td>
             <td class="borderedcol-8">${item.chieuDainhaplai || ''}</td>
             <td class="borderedcol-9">${item.soNepnhaplai || ''}</td>
             <td class="borderedcol-10">${item.vitriKehang || ''}</td>
@@ -374,8 +374,8 @@ function extractDetailDataFromRow(row) {
         tenVattu: row[10],
         chieuDai: row[11],
         soNep: row[12],
-        slXuatQuydoi: row[15],
-        dvtQuydoi: row[16],
+        sl: row[13],
+        dvt: row[14],
         chieuDainhaplai: row[17],
         soNepnhaplai: row[18],
         vitriKehang: row[19],
